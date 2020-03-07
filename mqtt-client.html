@@ -6,8 +6,10 @@
      
      <script> 
      let options = {
-          host: 'localhost',
-           port: 8081, protocol: 'ws' };
+          host: 'auoh.herokuapp.com',
+           port: 443,
+           protocol: 'wss'
+        };
            let client = mqtt.connect(options)
            client.on('connect', () => {
                console.log('connected');
