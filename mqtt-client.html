@@ -14,13 +14,13 @@
            client.on('connect', () => {
                console.log('connected');
              }); 
-            //  client.subscribe("joints");
-             client.subscribe("joint1");
-             client.subscribe("joint2");
-             client.subscribe("joint3");
-             client.subscribe("joint4");
-             client.subscribe("joint5");
-             client.subscribe("joint6");
+            client.subscribe("joints");
+            //  client.subscribe("joint1");
+            //  client.subscribe("joint2");
+            //  client.subscribe("joint3");
+            //  client.subscribe("joint4");
+            //  client.subscribe("joint5");
+            //  client.subscribe("joint6");
              client.on('message', function (topic, payload) { 
                  console.log([topic, payload].join(": "))
                  });
